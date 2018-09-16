@@ -22,48 +22,6 @@
     #home-banner > .center {
       height: 682px; } }
 
-#menu-btn {
-  background-color: rgba(0, 0, 0, 0.6);
-  width: 40px;
-  height: 40px;
-  display: block;
-  position: fixed;
-  z-index: 20;
-  top: 10px;
-  right: 10px;
-  padding: 0.4em;
-  box-sizing: border-box;
-  cursor: pointer; }
-  #menu-btn span {
-    display: block;
-    position: relative;
-    margin-top: 48%; }
-  #menu-btn span::before, #menu-btn span::after {
-    content: "";
-    position: absolute; }
-  #menu-btn span::before {
-    top: -6px; }
-  #menu-btn span::after {
-    top: 6px; }
-  #menu-btn span, #menu-btn span::before, #menu-btn span::after {
-    background-color: #FFF;
-    height: 3px;
-    width: 100%;
-    transition: transform 200ms ease-in-out, box-shadow 200ms ease-in-out; }
-
-#menu-btn.menu-cross {
-  background-color: transparent; }
-  #menu-btn.menu-cross span::before {
-    top: 0px;
-    box-shadow: 0 0 30px #FFF;
-    transform: rotate(45deg); }
-  #menu-btn.menu-cross span::after {
-    top: 0px;
-    box-shadow: 0 0 30px #FFF;
-    transform: rotate(-45deg); }
-  #menu-btn.menu-cross span {
-    height: 0; }
-
 ul#better-list {
   list-style-type: square;
   margin: 0 auto;
