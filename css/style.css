@@ -1,0 +1,313 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400';
+/* 
+*	BASE STYLE
+*/
+html, body {
+  font-size: 16px;
+  height: 100%;
+  background-color: #F6F6F8; }
+
+body {
+  line-height: 1.6rem;
+  color: #191919; }
+
+h1, h2, h3, h4, h4, h6 {
+  color: #000;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300; }
+
+h1 {
+  font-size: 1.8rem; }
+
+h2 {
+  font-size: 1.6rem; }
+
+h3 {
+  font-size: 1.4rem; }
+
+h4 {
+  font-size: 1.3rem; }
+
+h5 {
+  font-size: 1.2rem; }
+
+h6 {
+  font-size: 1.1rem; }
+
+hr {
+  border: 1px solid #ccc;
+  clear: both;
+  margin: 10px 0; }
+
+a {
+  text-decoration: none;
+  color: #1981DC;
+  outline: 0; }
+  a:hover, a:focus {
+    color: #1368B2; }
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+p {
+  font-size: 1rem; }
+
+span {
+  font-size: 1rem; }
+
+.fancy-heading {
+  color: #FFF;
+  padding: 10px 15px;
+  border: 2px solid #FFF;
+  z-index: 10; }
+
+.banner {
+  padding: 10px 15px;
+  box-sizing: border-box; }
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center; }
+
+.mask {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  z-index: 5; }
+
+.mask.mask-hidden {
+  background-color: transparent;
+  display: none; }
+
+.mask.mask-priority {
+  z-index: 15; }
+
+.vert-nav {
+  text-align: center;
+  background-color: #FFF;
+  background-color: #F6F6F8; }
+  .vert-nav ul.nav-list li {
+    box-sizing: border-box; }
+    .vert-nav ul.nav-list li a {
+      display: block;
+      padding: 15px 10px;
+      color: #F6F6F8; }
+    .vert-nav ul.nav-list li a.local-link {
+      padding: 10px 10px;
+      color: #F6F6F8; }
+      @media screen and (min-width: 80em) {
+        .vert-nav ul.nav-list li a.local-link {
+          display: none; } }
+    .vert-nav ul.nav-list li a.page-link.current-page {
+      color: #575757; }
+    .vert-nav ul.nav-list li hr {
+      margin: 0;
+      height: 1px;
+      border: 0;
+      background-color: #F6F6F8;
+      width: 100%;
+      display: block;
+      text-align: center; }
+
+.page-link {
+  font-size: 1.1rem; }
+
+.current-page {
+  background-color: #F6F6F8; }
+
+.local-link {
+  font-size: 0.9rem; }
+
+.slide-menu {
+  width: 180px;
+  position: fixed;
+  height: 100%;
+  z-index: 20;
+  left: -180px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 0%, transparent 100%);
+  transition: left 150ms ease-in-out; }
+
+.slide-menu.menu-open {
+  box-shadow: 1px 0 15px rgba(0, 0, 0, 0.5);
+  left: 0; }
+
+.section-info {
+  box-sizing: border-box;
+  padding: 10px; }
+  @media screen and (min-width: 64em) {
+    .section-info {
+      padding: 25px; } }
+
+.invisible {
+  visibility: hidden; }
+
+/*
+* HOME PAGE
+*/
+#content-wrapper {
+  position: relative; }
+
+#content-wrapper section {
+  text-align: center; }
+
+#home-banner {
+  background-image: url("../imgs/club-banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative; }
+
+#credit {
+  font-size: 0.3rem;
+  color: #F6F6F8; }
+
+#home-banner > .center {
+  height: 267px; }
+  @media screen and (min-width: 48em) {
+    #home-banner > .center {
+      height: 412px; } }
+  @media screen and (min-width: 64em) {
+    #home-banner > .center {
+      height: 505px; } }
+
+p.intro-p {
+  font-size: 1rem;
+  text-align: center; }
+  @media screen and (min-width: 64em) {
+    p.intro-p {
+      font-size: 1.1rem;
+      text-align: justify; } }
+
+#menu-btn {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 40px;
+  height: 40px;
+  display: block;
+  position: fixed;
+  z-index: 20;
+  top: 10px;
+  right: 10px;
+  padding: 0.4em;
+  box-sizing: border-box;
+  cursor: pointer; }
+  #menu-btn span {
+    display: block;
+    position: relative;
+    margin-top: 48%; }
+  #menu-btn span::before, #menu-btn span::after {
+    content: "";
+    position: absolute; }
+  #menu-btn span::before {
+    top: -6px; }
+  #menu-btn span::after {
+    top: 6px; }
+  #menu-btn span, #menu-btn span::before, #menu-btn span::after {
+    background-color: #FFF;
+    height: 3px;
+    width: 100%;
+    transition: transform 200ms ease-in-out, box-shadow 200ms ease-in-out; }
+
+#menu-btn.menu-cross {
+  background-color: transparent; }
+  #menu-btn.menu-cross span::before {
+    top: 0px;
+    box-shadow: 0 0 30px #FFF;
+    transform: rotate(45deg); }
+  #menu-btn.menu-cross span::after {
+    top: 0px;
+    box-shadow: 0 0 30px #FFF;
+    transform: rotate(-45deg); }
+  #menu-btn.menu-cross span {
+    height: 0; }
+
+#eboard {
+  padding: 12px;
+  background-color: #191919;
+  box-sizing: border-box;
+  color: #FFF; }
+  #eboard h2 {
+    color: #FFF; }
+
+#eboard-list li {
+  margin: 8px 0; }
+
+.eboard-img, .eboard-name, .eboard-email, .eboard-position {
+  display: block; }
+
+.eboard-img {
+  width: 90px;
+  height: 90px;
+  border-radius: 100%;
+  margin: 0 auto; }
+  @media screen and (min-width: 64em) {
+    .eboard-img {
+      width: 110px;
+      height: 110px; } }
+
+.eboard-position {
+  font-weight: bold; }
+
+#contact {
+  position: relative;
+  background-color: #FFDA6B; }
+  #contact h2, #contact h3 {
+    font-weight: 400; }
+
+.contact-p {
+  margin: 0 auto 10px;
+  max-width: 950px;
+  font-size: 1.0rem;
+  text-align: justify; }
+  @media screen and (min-width: 64em) {
+    .contact-p {
+      font-size: 1.1rem; } }
+
+#contact-header {
+  background-color: #F5F5F7; }
+
+.contact-link {
+  box-sizing: border-box;
+  padding: 10px 16px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  color: #F6F6F8;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.7);
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease-in-out, text-shadow 0.3s ease-in-out; }
+  .contact-link:hover {
+    text-shadow: 0px 0px 25px #FFF; }
+  @media screen and (min-width: 64em) {
+    .contact-link {
+      margin-bottom: 5px; } }
+
+#contact-mail, #contact-fb {
+  box-shadow: 0 -2px 20px rgba(0, 0, 0, 0.2); }
+
+#contact-mail {
+  background-color: #F6F6F8; }
+
+#contact-fb {
+  background-color: #49494A;
+  color: #F6F6F8; }
+  #contact-fb h3 {
+    color: #F6F6F8; }
+
+#mail-list-link {
+  background-color: #CC4343; }
+  #mail-list-link:hover {
+    background-color: #C72F2F; }
+
+#facebook-link {
+  background-color: #3B5998; }
+  #facebook-link:hover {
+    background-color: #355088; }

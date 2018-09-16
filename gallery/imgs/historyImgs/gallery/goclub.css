@@ -1,0 +1,55 @@
+  body{
+	background-color:#FFFFFF
+	;
+	background-size:100%;
+	font: calibri;
+  }
+
+  h1{
+	color:#FFFFFF;
+	font-size:x-large;
+	margin-bottom:0px;
+  }
+  
+
+  .title {
+      font-size:x-large;
+}
+
+#background {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	z-index: -1;
+	background-image: url(masaki_blossoms_a.jpg);
+}
+
+.stretch {
+	width:auto;
+	height:auto;
+}
+
+.purplebg{
+	background-color:#1C3643;
+	border:3px solid #993300;
+	border-spacing:0px;
+	border-color: #76BCAE;
+}
+.greenbg{
+	background-color:#CCCC99;
+	border:3px solid #993300;
+	border-spacing:0px;
+	border-color: #76BCAE;
+}
+#maintable {
+  border-spacing:0px;
+  margin-top:15px;
+}
+
+#sideBar a {
+	color: #FFFFFF;
+	font-size:large;
+	font-weight:
+	}
