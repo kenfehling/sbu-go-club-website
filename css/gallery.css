@@ -21,3 +21,14 @@
   @media screen and (min-width: 64em) {
     #home-banner > .center {
       height: 682px; } }
+
+.gal-section {
+  max-width: 900px;
+  margin: auto;
+}
+
+.thumbnail {
+  width: 128px;
+  vertical-align: middle;
+  margin: 10px;
+}
