@@ -96,7 +96,7 @@ p.intro-p {
   .contact-link {
     margin-bottom: 5px; } }
 
-#contact-mail, #contact-fb {
+#contact-mail, #contact-fb, #contact-instagram {
   box-shadow: 0 -2px 20px rgba(0, 0, 0, 0.2); }
 
 #contact-mail {
@@ -105,8 +105,12 @@ p.intro-p {
 #contact-fb {
   background-color: #49494A;
   color: #F6F6F8; }
+
 #contact-fb h3 {
   color: #F6F6F8; }
+
+#contact-instagram {
+  background-color: #dbdbdd; }
 
 #mail-list-link {
   background-color: #CC4343; }
@@ -117,3 +121,8 @@ p.intro-p {
   background-color: #3B5998; }
 #facebook-link:hover {
   background-color: #355088; }
+
+#instagram-link {
+  background-color: #7645c7; }
+#instagram-link:hover {
+  background-color: #652dc7; }
